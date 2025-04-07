@@ -2,5 +2,6 @@ source "https://rubygems.org"
 
 gem "dotenv"
 gem "http"
+gem "pry-byebug"
 
 # remember to run bundle install in terminal
