@@ -77,10 +77,6 @@ pp current.keys
 pp "The current temperature is #{current.fetch("temperature")} degrees F." 
 pp "The current conditions are: #{current.fetch("summary")}."
 
-
-
-{:hour=>,:percip_prob=>}
-
 hourly = parsedpirate.fetch("hourly")
 
 pp hourly.class
@@ -92,7 +88,7 @@ pp hourly.class
 pp hourly.length
 
 hourly.each_with_index do (obj,h)
-  if h<=12:
+  if h <= 12
     pp "Hour number: #{h}"
     pp "Time: #{hourly.fetch("time")} "
     pp "Precip probability: #{hourly.fetch("precipProbability")} "
@@ -105,5 +101,5 @@ end
 precip_prob = Array.new
 precip_prob.push = 
 
-debugger  # then type exit in terminal when done with debugger to exit
+# debugger  # then type exit in terminal when done with debugger to exit
 pp "end of file"
