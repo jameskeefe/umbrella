@@ -13,6 +13,7 @@ user_loc = user_loc.gsub(" ","%20")
 
 require "http"
 require "json"
+require "ascii_charts"
 
 url_googleapi = "https://maps.googleapis.com/maps/api/geocode/json?"
 google_address = "address=#{user_loc}"
